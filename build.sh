@@ -2,7 +2,7 @@
 echo "starting build...."
 sleep 2
 
-echo "Compiling application.."
-sleep 2
+echo "Simulating failure.."
+exit 1
 
-echo "Build completed successfully"
+
