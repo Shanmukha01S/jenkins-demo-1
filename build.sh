@@ -1,15 +1,8 @@
 #!/bin/bash
+echo "starting build...."
+sleep 2
 
-echo "====================== jenkins build ======================"
-date
+echo "Compiling application.."
+sleep 2
 
-echo "user running : " 
-whoami
-
-echo "echo working directory : "
-pwd
-
-echo "listing files : "
-ls -l
-
-echo "====================== Build finished ================="
+echo "Build completed successfully"
