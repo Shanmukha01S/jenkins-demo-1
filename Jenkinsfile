@@ -13,7 +13,8 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Build stage started'
-        sh 'ls -l'
+        sh 'chmod +x build.sh'
+        sh './build.sh'
       }
     }
 
