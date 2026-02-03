@@ -3,6 +3,6 @@ echo "starting build...."
 sleep 2
 
 echo "Simulating failure.."
-exit 1
+exit 0
 
 
