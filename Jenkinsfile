@@ -20,25 +20,25 @@ pipeline {
 
     stage('Test') {
       steps {
-        echo 'Running tests'
+        echo 'Running basic tests'
         echo 'All tests passed'
       }
     }
 
-    stage('Archive') {
+    stage('Archive Artifact') {
       steps {
-        sh 'echo "Build successful" > build.txt'
-        archiveArtifacts artifacts: 'build.txt'
+        echo "Archieving Artifacts"
+        archiveArtifacts artifacts: '*.txt', fingerprint : true
       }
     }
   }
 
   post {
     success {
-      echo 'Pipeline executed successfully'
+      echo 'Build success'
     }
     failure {
-      echo 'Pipeline failed'
+      echo 'Build failed'
     }
   }
 }

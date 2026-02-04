@@ -2,7 +2,6 @@
 echo "starting build...."
 sleep 2
 
-echo "Compiling application.."
-sleep 2
+echo "Build completed at $(date)" > build_output.txt
+echo "Artifact generated"
 
-echo "Build completed successfully"
